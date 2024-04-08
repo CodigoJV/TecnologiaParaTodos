@@ -39,6 +39,13 @@
     <footer>
         <p>&copy; 2024 Tecnología para Todos</p>
     </footer>
-
+    <script>
+        const form = document.querySelector('form');
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('¡Gracias por contactarnos! Nos pondremos en contacto contigo pronto.');
+            this.reset();
+        });
+    </script>
 </body>
 </html>
